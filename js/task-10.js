@@ -10,9 +10,8 @@ const boxes = document.querySelector("#boxes");
 
 createButton.addEventListener("click", (createButtonClick) => {
   createButtonClick.preventDefault();
-
+  let size = 20;
   for (let i = 0; i < input.value; i += 1) {
-    let size = 30;
     const box = document.createElement("div");
     box.style.width = `${(size += 10)}px`;
     box.style.height = `${(size += 10)}px`;
