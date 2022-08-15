@@ -14,7 +14,7 @@ createButton.addEventListener("click", (createButtonClick) => {
   for (let i = 0; i < input.value; i += 1) {
     const box = document.createElement("div");
     box.style.width = `${(size += 10)}px`;
-    box.style.height = `${(size += 10)}px`;
+    box.style.height = `${size}px`;
     box.style.background = `${getRandomHexColor()}`;
     boxes.append(box);
   }
